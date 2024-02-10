@@ -11,7 +11,9 @@ body {
   max-width: 1140px;
   margin: 1.5rem auto;
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  /* grid-template-columns: repeat(4, auto);*/
+  /* 2 : */
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   grid-gap: 1rem;
   padding: 0 0.5rem;
 }
@@ -44,7 +46,8 @@ img {
   border-radius: 10px;
 }
 /* responsvie: */
-@media screen and (max-width: 900px) {
+/* 1 : */
+/* @media screen and (max-width: 900px) {
   .products {
     grid-template-columns: repeat(3, auto);
   }
@@ -58,4 +61,4 @@ img {
   .products {
     grid-template-columns: repeat(1, auto);
   }
-}
+} */
