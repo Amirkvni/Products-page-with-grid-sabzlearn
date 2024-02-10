@@ -13,6 +13,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 1rem;
+  padding: 0 0.5rem;
 }
 img {
   width: 100%;
@@ -41,4 +42,20 @@ img {
   width: 93%;
   font-size: 1rem;
   border-radius: 10px;
+}
+/* responsvie: */
+@media screen and (max-width: 900px) {
+  .products {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media screen and (max-width: 580px) {
+  .products {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (max-width: 400px) {
+  .products {
+    grid-template-columns: repeat(1, auto);
+  }
 }
